@@ -1,0 +1,115 @@
+.slideshow-container {
+    position: relative;
+    height: 700px;
+    width: 500px;
+    overflow: hidden;
+  }
+  
+  .mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 500px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .mySlides.fade {
+    opacity: 1;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  body {
+	background-color: #FF99CC;
+	font-size: 16px;
+    height: 1200px;
+}
+
+.container {
+	height: 700px;
+    width: 500px;
+    margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.image {
+    color: black;
+	height: 700px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.caption {
+	text-align: center;
+}
+.h1{
+    text-align: center;
+    font-family: Arial Black;
+    font-size: 40px;
+    color: white;
+}
+#text img{
+    height: 100px;
+    width:  100px;
+    padding-left: 865px;
+}
+.h2{
+    text-align: center;
+    font-size: 20px;
+}
+.hidden {
+    display: none;
+  }
+  
+  .hide-button {
+    display: block;
+  }
+  
+  .show-button {
+    display: none;
+  }
+
+#show-divs{
+    background-color: #CCFFCC;
+    margin-left: 830px;
+    margin-top: 300px;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    font-family: Segoe UI Black;
+    font-size: 20px;
+}
+.a{
+    height: 100px;
+    width:  100px;
+    padding-top: 20px;
+    padding-left: 880px;
+}

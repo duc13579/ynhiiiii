@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen Nhi</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <button id="show-divs">Ấn Vào Đêy Đii </button>
+<div class="hidden">
+    <div id="text">
+        <h1 class="h1">Happy Birthday</h1>
+        <h1 class="h1">Yến Nhiii</h1> 
+        <img src="anh/birthday-cake.png" alt="">
+    </div>
+    <br>
+    <div class="container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="image" src="anh/z4212046942828_ecb2f2ce1952eddd03320147de4381cc.jpg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="image" src="anh/z4212046938182_b00007a92c5430dd6ff4007e99ae2e45.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="image" src="anh/z4212055317435_593343c52e75b253ef1cc46510e391e3.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="image" src="anh/z4212060368646_651dad7107ae3f0ef5008d5224deeae1.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      </div>
+      <hr>
+      <div>
+        <h1 class="h2">Chào Nhi mặc dù anh chúc rồi nhưng cái này là một chuyện khác =))</h1>
+        <h1 class="h2"> Chúc Yến Nhi 19 tủi xinh hơn nữa, vui vẻ, học giỏi, tuổi mới vui vẻ hơn không bao giờ phải buồn nữa, mong mọi thứ tốt đẹp sẽ đến với em </h1>
+      </div>
+    </div>
+    <script>
+    var showDivsButton = document.getElementById('show-divs');
+var divs = document.querySelectorAll('.hidden');
+
+showDivsButton.addEventListener('click', function() {
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].classList.remove('hidden');
+  }
+  
+  showDivsButton.classList.remove('hide-button');
+  showDivsButton.classList.add('show-button');
+});
+    </script>
+      <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("fade");
+  }
+  slides[slideIndex - 1].classList.add("fade");
+}
+      </script>
+    
+</body>
+</html>
